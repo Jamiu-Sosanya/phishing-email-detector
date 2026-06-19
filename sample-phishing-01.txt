@@ -1,0 +1,24 @@
+From: noreply@amazon-security-alert.net
+To: user@example.com
+Subject: [ACTION REQUIRED] Your Amazon account will be closed in 24 hours
+
+Dear Valued Customer,
+
+Our security system has flagged suspicious login attempts on your Amazon account.
+
+To prevent your account from being permanently suspended, you must verify your payment information immediately.
+
+VERIFY NOW: http://amazon-account-verify.ru/secure/login?ref=urgent
+
+You will need to provide:
+- Email address and password
+- Billing address
+- Credit card number and expiry
+- CVV security code
+
+If you do not complete verification within 24 HOURS your account and all associated orders will be cancelled.
+
+Do not ignore this message.
+
+Amazon Customer Security
+amazon-security-alert.net

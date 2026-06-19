@@ -1,0 +1,17 @@
+From: newsletter@spotify.com
+To: james.henderson@example.com
+Subject: Your Spotify Wrapped is here, James
+
+Hi James,
+
+It's that time of year again. Your 2024 Spotify Wrapped is ready — head to the app to see your top songs, artists, and podcasts from the year.
+
+Open Spotify to see your Wrapped: https://open.spotify.com/wrapped
+
+Thanks for listening,
+The Spotify Team
+
+---
+You received this email because you have a Spotify account.
+Unsubscribe: https://www.spotify.com/account/notifications/
+Spotify AB, Regeringsgatan 19, 111 53 Stockholm, Sweden
