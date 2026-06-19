@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="docs/demo.gif" alt="PhishScan Demo" width="850" />
-
 # 🛡️ PhishScan
 ### AI-Powered Phishing Email Detector
 
@@ -31,6 +29,28 @@ Paste an email's headers and body into the interface. PhishScan uses AI and URL 
 Instead of only saying *“safe”* or *“phishing,”* PhishScan explains **why** an email was flagged—making it useful for security awareness, training, and defensive review.
 
 > ⚠️ **Important:** PhishScan is an assistant for human review. It does not guarantee that an email is safe or malicious.
+
+---
+
+## 🖼️ Product Preview
+
+### Analyse any suspicious email
+
+Paste email headers and message content into the clean, focused interface. You can also load a sample phishing email to test the workflow instantly.
+
+![PhishScan email input screen](docs/screenshots/email-input.png)
+
+### Review a sample email before analysis
+
+PhishScan supports full email content, including the sender, recipient, subject line, body text, and embedded links.
+
+![PhishScan sample email screen](docs/screenshots/sample-email.png)
+
+### Understand the risk instantly
+
+Receive a clear phishing verdict, a 0–10 risk score, individual indicator results, and VirusTotal URL reputation findings.
+
+![PhishScan phishing results screen](docs/screenshots/phishing-results.png)
 
 ---
 
@@ -93,24 +113,6 @@ Instead of only saying *“safe”* or *“phishing,”* PhishScan explains **wh
 
 ---
 
-## 🏗️ Architecture
-
-<div align="center">
-
-<img src="docs/architecture.png" alt="PhishScan Architecture" width="850" />
-
-</div>
-
-| Layer | Technology | Role |
-| :--- | :--- | :--- |
-| 🖥️ Frontend | HTML, CSS, Vanilla JavaScript | Email input form and results dashboard |
-| ⚙️ Workflow | n8n | Webhook handling, automation, and API orchestration |
-| 🧠 AI Engine | OpenAI GPT-4o | Phishing analysis and structured explanations |
-| 🛡️ Threat Intelligence | VirusTotal API | Malicious URL reputation analysis |
-| 🧪 Testing | Python 3 | Batch processing sample emails |
-
----
-
 ## 🚩 Phishing Indicators Analysed
 
 | # | Indicator | What PhishScan Looks For |
@@ -136,6 +138,18 @@ Instead of only saying *“safe”* or *“phishing,”* PhishScan explains **wh
 | `3–5` | 🟡 Review Carefully | Verify suspicious requests before responding or clicking. |
 | `6–7` | 🟠 Suspicious | Avoid links and attachments until independently verified. |
 | `8–10` | 🔴 High Risk | Treat the email as potentially malicious and report it if appropriate. |
+
+---
+
+## 🧰 Tech Stack
+
+| Component | Tool | Purpose |
+| :--- | :--- | :--- |
+| 🖥️ Frontend | HTML, CSS, Vanilla JavaScript | Email input form and results dashboard |
+| ⚙️ Automation | n8n | Webhook handling, automation, and API orchestration |
+| 🧠 AI Model | OpenAI GPT-4o | Phishing analysis and structured explanations |
+| 🛡️ URL Intelligence | VirusTotal API | Malicious URL reputation analysis |
+| 🧪 Testing | Python 3 | Batch processing sample emails |
 
 ---
 
@@ -195,20 +209,12 @@ const DEMO_MODE = false;
 
 ### 5. Start the Frontend
 
-Option A — Open the file directly:
-
-```bash
-open frontend/index.html
-```
-
-Option B — Run a local server:
-
 ```bash
 cd frontend
 python3 -m http.server 8080
 ```
 
-Open this address in your browser:
+Open:
 
 ```text
 http://localhost:8080
@@ -262,8 +268,10 @@ phishing-detector/
 │   └── sample-legit-02.txt
 │
 ├── docs/
-│   ├── demo.gif
-│   └── architecture.png
+│   └── screenshots/
+│       ├── email-input.png
+│       ├── phishing-results.png
+│       └── sample-email.png
 │
 ├── .env.example
 └── README.md
@@ -274,7 +282,7 @@ phishing-detector/
 ## 🔐 Security & Privacy Notes
 
 - Use HTTPS for production deployments.
-- Never expose your OpenAI or VirusTotal API keys in frontend code.
+- Never expose OpenAI or VirusTotal API keys in frontend code.
 - Avoid storing sensitive email content unless you have a clear retention policy.
 - Use anonymised sample emails for testing.
 - Review n8n execution logs and restrict access where necessary.
@@ -314,9 +322,9 @@ Potential future improvements include:
 
 ## 👤 Author
 
-Built by **[Jamiu Sosanya](https://www.linkedin.com/in/sosanya-temitope)** as part of a cybersecurity portfolio.
+Built by **[Your Name](#)** as part of a cybersecurity portfolio.
 
-[LinkedIn](https://www.linkedin.com/in/sosanya-temitope) • [GitHub](https://github.com/Jamiu-Sosanya)
+[LinkedIn](#) • [GitHub](#)
 
 ---
 
